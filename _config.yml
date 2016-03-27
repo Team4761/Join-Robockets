@@ -1,0 +1,20 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Join Robockets
+email: robockets.4761@gmail.com
+description: Join Robockets is a website for current or incoming RMHS students that are curious about joining our robotics team but aren't really sure what they would do. We'd love to have you!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://team4761.github.io/Join-Robockets" # the base hostname & protocol for your site
+twitter_username: FRC4761
+github_username:  Team4761
+facebook_username: FrcTeam4761
+instagram_username: robockets.4761
+
+# Build settings
+markdown: kramdown

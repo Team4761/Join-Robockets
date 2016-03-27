@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Do you like...</h1>
+  <ul>
+    {% for page in site.pages %}
+      {% if page.title %}
+      <li>
+          <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}?</a></strong>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  Then join the Reading Robockets!
+
+</div>
