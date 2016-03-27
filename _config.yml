@@ -9,8 +9,8 @@
 title: Join Robockets
 email: robockets.4761@gmail.com
 description: Join Robockets is a website for current or incoming RMHS students that are curious about joining our robotics team but aren't really sure what they would do. We'd love to have you!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://team4761.github.io/Join-Robockets" # the base hostname & protocol for your site
+baseurl: "/Join-Robockets" # the subpath of your site, e.g. /blog
+url: "https://team4761.github.io" # the base hostname & protocol for your site
 twitter_username: FRC4761
 github_username:  Team4761
 facebook_username: FrcTeam4761
