@@ -10,7 +10,7 @@
 <body>
 	<div align="center">
 		<h1>Do you like...</h1>
-		<span id="thingtext"></span>?
+		<span id="subject"></span>?
 		<br/> 
 		<br/> 
 		<div id="qrcode"></div>
@@ -21,21 +21,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ '/css/spinner.css' | prepend: site.baseurl }}">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-	<script>
-	var things = [{% for page in site.pages %}{% if page.title %}["{{ page.title }}", "{{ page.permalink }}"],{% endif %}{% endfor %}];
-	function clickCallback() {
-		rand = Math.random();
-		rand *= things.length;
-		rand = Math.floor(rand);
-		document.getElementById("thingtext").innerHTML = things[rand][0].toLowerCase() + "<span class=\"blink\">_</span>";
-		qrCodeNode = document.getElementById("qrcode");
-		while(qrCodeNode.firstChild) {
-			qrCodeNode.removeChild(qrCodeNode.firstChild);
-		}
-		$('#qrcode').qrcode("{{ site.url }}" + things[rand][1]);
-	}
-	document.addEventListener("click", clickCallback);
-	document.body.click()
-	</script>
+	<script src="{{ '/js/spinner.js' | prepend: site.baseurl }}"></script>
 </body>
 </html>
