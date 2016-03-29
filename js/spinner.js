@@ -29,7 +29,7 @@ function getRandomSubject() {
 function updateCard() {
 	var subjectNode = document.getElementById("subject");
 	var subjectObj = getRandomSubject();
-	subjectNode.innerHTML = subjectObj.title.toLowerCase();
+	subjectNode.innerHTML = subjectObj.title.toLowerCase() + "?";
 	var qrCodeNode = document.getElementById("qrcode");
 	while(qrCodeNode.firstChild) {
 		qrCodeNode.removeChild(qrCodeNode.firstChild);
