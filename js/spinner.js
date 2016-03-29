@@ -26,7 +26,7 @@ function getRandomSubject() {
 	*/
 }
 
-function clickCallback() {
+function updateCard() {
 	var subjectNode = document.getElementById("subject");
 	var subjectObj = getRandomSubject();
 	subjectNode.innerHTML = subjectObj.title.toLowerCase();
@@ -35,6 +35,11 @@ function clickCallback() {
 		qrCodeNode.removeChild(qrCodeNode.firstChild);
 	}
 	$('#qrcode').qrcode("{{ site.url }}" + subjectObj.permalink);
+}
+
+function clickCallback() {
+	$('#spinner').fadeOut(200, updateCard);
+	$('#spinner').fadeIn(200);
 }
 
 document.addEventListener("click", clickCallback);
